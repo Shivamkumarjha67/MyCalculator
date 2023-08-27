@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:background="#FBF8F8"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInput"
+            android:gravity="end"
+            android:textSize="35sp"
+            android:textColor="#6E7A83"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtResult"
+            android:textSize="40sp"
+            android:textColor="#041827"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+
+<!--    C ( ) /
+        7 8 9 *
+        4 5 6 -
+        1 2 3 +
+        0 . =
+-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnClear"
+                style="@style/operation_button"
+                android:background="@drawable/operation_shape"
+                android:text="@string/c" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnStartBracket"
+                style="@style/operation_button"
+                android:background="@drawable/operation_shape"
+                android:text="@string/start_bracket"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnEndBracket"
+                style="@style/operation_button"
+                android:background="@drawable/operation_shape"
+                android:text="@string/end_bracket"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnDivision"
+                style="@style/operation_button"
+                android:background="@drawable/operation_shape"
+                android:text="@string/division"/>
+
+        </TableRow>
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnSeven"
+                style="@style/operation_button"
+                android:background="@drawable/coustom_shape"
+                android:text="@string/_7" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnEight"
+                style="@style/operation_button"
+                android:background="@drawable/coustom_shape"
+                android:text="@string/_8"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnNine"
+                style="@style/operation_button"
+                android:background="@drawable/coustom_shape"
+                android:text="@string/_9"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnMultiply"
+                style="@style/operation_button"
+                android:background="@drawable/operation_shape"
+                android:text="@string/multiply"/>
+
+        </TableRow>
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnFour"
+                style="@style/operation_button"
+                android:background="@drawable/coustom_shape"
+                android:text="@string/_4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnFive"
+                style="@style/operation_button"
+                android:background="@drawable/coustom_shape"
+                android:text="@string/_5"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnSix"
+                style="@style/operation_button"
+                android:background="@drawable/coustom_shape"
+                android:text="@string/_6"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnSubtract"
+                style="@style/operation_button"
+                android:background="@drawable/operation_shape"
+                android:text="@string/subtract"/>
+
+        </TableRow>
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnOne"
+                style="@style/operation_button"
+                android:background="@drawable/coustom_shape"
+                android:text="@string/_1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnTwo"
+                style="@style/operation_button"
+                android:background="@drawable/coustom_shape"
+                android:text="@string/_2"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnThree"
+                style="@style/operation_button"
+                android:background="@drawable/coustom_shape"
+                android:text="@string/_3"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnAdd"
+                style="@style/operation_button"
+                android:background="@drawable/operation_shape"
+                android:text="@string/Add"/>
+
+        </TableRow>
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnZero"
+                style="@style/operation_button"
+                android:background="@drawable/coustom_shape"
+                android:text="@string/_0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:height="90dp"
+                android:id="@+id/btnDot"
+                android:background="@drawable/operation_shape"
+                style="@style/operation_button"
+                android:text="@string/Dot"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:height="90dp"
+                android:id="@+id/btnEqual"
+                android:background="@drawable/operation_shape"
+                style="@style/operation_button"
+                android:backgroundTint="#28CAC9"
+                android:text="@string/Equal"/>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
